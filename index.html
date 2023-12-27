@@ -8,8 +8,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--box icons-->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-
-    <!--custom css-->
+   <!--lightgallaye-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+   
+   <!--custom css-->
     <link rel="stylesheet" href="css/portos.css" />
   </head>
   <body>
@@ -23,7 +25,8 @@
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#skill">Skill</a>
-        <a href="#project">Project</a>
+        <a href="#portofolio">Project</a>
+        <a href="#gallery">Gallery</a>
         <a href="#contact" class="active">Contact</a>
       </nav>
     </header>
@@ -125,6 +128,34 @@
         </div>
       </div>
     </section>
+    
+  </section>
+
+  <!--gallery design-->
+  <section class="gallery-pict" id="gallery">
+   <h2 class="heading">Gallery</h2>
+   <div class="gallery">
+    <a href="imej/ran1.png">
+      <img src="imej/ran1.png" alt="">
+    </a>
+    <a href="imej/pict3.png">
+      <img src="imej/pict3.png" alt="">
+    </a>
+    <a href="imej/ran2.png">
+      <img src="imej/ran2.png" alt="">
+    </a>
+    <a href="imej/pict2.png">
+      <img src="imej/pict2.png" alt="">
+    </a>
+    <a href="imej/ran3.png">
+      <img src="imej/ran3.png" alt="">
+    </a>
+    <a href="imej/pict1.png">
+      <img src="imej/pict1.png" alt="">
+    </a>
+   </div>
+
+  </section>
           
     <!-- contact section design -->
     <section class="contact" id="contact">
@@ -143,7 +174,7 @@
           <input type="submit" value="Send Message" class="btn btn-kirim">
           
       </form>
-   </section>
+   
 
 
     <!--footer design-->
@@ -163,7 +194,13 @@
     <script>
       AOS.init();
     </script>
-    <!--spread sheet-->
+     <!--lightgallery-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js" ></script>
+     <script>
+      lightGallery(document.querySelector('.gallery'));
+     </script>
+     
+     <!--spread sheet-->
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbyb7OI4-hPCAq5J0PRRs8JiUsonRbb6MZTgXSNI-B4JSZPopCIwlZhO-Qf0nrWcnO_fJA/exec'
       const form = document.forms['projek-contact-form']

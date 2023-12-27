@@ -9,6 +9,7 @@
   outline: none;
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
+  
 }
 
 :root {
@@ -280,6 +281,46 @@ margin: .3rem 0 1rem;
 font-size: 2rem;
 color: var(--second-bg-color);
 }
+
+.gallery-pict {
+  align-items: center;
+  display:flex;
+  justify-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+.gallery {
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.gallery a {
+height: 200px;
+width: 300px;
+margin: 16px;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 3px 5px #000;
+}
+.gallery a img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.gallery a img:hover {
+  transform: scale(1.4);
+}
+
+.gallery h2 {
+  margin-bottom: 5rem;
+}
+
+
 .contact h2 {
   margin-bottom: 3rem;
 }
